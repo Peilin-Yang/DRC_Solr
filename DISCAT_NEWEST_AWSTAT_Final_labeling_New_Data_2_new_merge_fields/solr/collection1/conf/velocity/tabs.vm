@@ -1,0 +1,62 @@
+#**
+ *  Provides navigation/access to Advanced search options
+ *  Usually displayed near the top of the page
+ *#
+
+##TODO: Make some nice tabs here
+
+#set($queryOpts = $params.get("queryOpts"))
+
+<div class="tabs-bar" #annTitle("Click the link to demonstrate various Solr capabilities")>
+
+  <span>Type of Search:</span>
+
+  ##queryOpts=$queryOpts
+
+  ## return to Simple Search
+  #set( $selected = ($queryOpts && $queryOpts != ""))
+  #set( $selected = ! $queryOpts )
+  <span class="tab #if($selected)selected#end">
+    #if($selected)
+      Public
+    #else
+      <a href="#url_for_home/?#debug#annotate">
+        Public</a>
+    #end
+  </span>
+
+ #set ($aa = $params.get('pt'))
+ #set ($bb = "none") 
+  ## GEO-Spatial / Location Basee
+ #set( $selected = ($queryOpts == "spatial")&&$aa!=$bb)
+
+#set($tett = "#lensNoQ()")
+#set($password=1234)
+  <span class="tab #if($selected)selected#end">
+    #if($selected&&$tett.length()==19)
+      Admin
+       <script type="text/javascript">
+         var person = prompt("Please enter your password", "This page for Admin only");
+         if(person!=$password){
+            window.location.replace("#{url_for_solr}/browse");
+         }
+      </script>
+    #else
+      <a href="#url_for_home?&queryOpts=spatial#debug#annotate">
+        Admin</a>
+    #end
+  </span>
+
+
+##  ## Group By Field
+##  #set( $selected = ($queryOpts == "group") )
+##  <span class="tab #if($selected)selected#end">
+##    #if($selected)
+##      Group By
+##    #else
+##      <a href="#url_for_home?#debug#annotate&queryOpts=group&group=true&group.field=manu_exact">
+##        Group By</a>
+##    #end
+##  </span>
+ 
+</div>

@@ -1,0 +1,26 @@
+#**
+ *  Overall HTML page layout
+ *#
+
+<html>
+<head>
+  #parse("head.vm")
+</head>
+  <body>
+    ##<div id="admin"><a href="#url_root/#/#core_name">Solr Admin</a></div>
+    <div id="header">
+      #parse("header.vm")
+    </div>
+    #if($params.getBool('mlt', false) == false)
+    <div class="row">
+      #parse("tabs.vm")
+    </div>
+    #end
+    <div id="content" class="row">
+      $content
+    </div>
+    ##<div id="footer">
+      ##parse("footer.vm")
+    ##</div>
+  </body>
+</html>

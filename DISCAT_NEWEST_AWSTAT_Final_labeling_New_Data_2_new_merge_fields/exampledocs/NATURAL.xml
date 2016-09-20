@@ -1,0 +1,51 @@
+<add>
+  <doc>
+    <field name="Abstract"></field>
+    <field name="Analytic Author Role"></field>
+    <field name="Analytic Connective Phrase"></field>
+    <field name="Analytic Medium Designator"></field>
+    <field name="Author Affiliation"></field>
+    <field name="Author, Analytic"></field>
+    <field name="Author, Monographic"></field>
+    <field name="Author, Subsidiary"></field>
+    <field name="Availability"></field>
+    <field name="CODEN"></field>
+    <field name="Call Number">150.N3.9</field>
+    <field name="Date of Copyright"></field>
+    <field name="Date of Publication">1997</field>
+    <field name="Document Type"></field>
+    <field name="Edition"></field>
+    <field name="Extent of Work"></field>
+    <field name="ISBN"></field>
+    <field name="ISSN"></field>
+    <field name="Id">36914</field>
+    <field name="Issue ID"></field>
+    <field name="Journal Title"></field>
+    <field name="Keywords">Disaster Preparedness, Mitigation, Government</field>
+    <field name="Location in Work"></field>
+    <field name="Location/URL"></field>
+    <field name="Monographic Author Role"></field>
+    <field name="Monographic Connective Phrase"></field>
+    <field name="Monographic Medium Designator"></field>
+    <field name="Notes">1) Strategic Plan{1) Goal/Opportunity 2) Policy Questions 3) Scientific Goal}</field>
+    <field name="Packaging Method"></field>
+    <field name="Place of Meeting"></field>
+    <field name="Place of Publication">Washington, D.C.</field>
+    <field name="Publisher Name">US Government Printing Office</field>
+    <field name="Report ID"></field>
+    <field name="Reprint Status">03/29/00</field>
+    <field name="Reproduction Ratio"></field>
+    <field name="Series Editor"></field>
+    <field name="Series Editor Role"></field>
+    <field name="Series Issue ID"></field>
+    <field name="Series Title"></field>
+    <field name="Series Volume ID"></field>
+    <field name="Size"></field>
+    <field name="Subsidiary Author Role"></field>
+    <field name="Title"></field>
+    <field name="Title, Analytic"></field>
+    <field name="Title, Monographic">NATURAL DISASTER REDUCTION: A PLAN FOR THE NATION</field>
+    <field name="Volume ID"></field>
+    <field name="Workform">Book Short Form</field>
+  </doc>
+</add>

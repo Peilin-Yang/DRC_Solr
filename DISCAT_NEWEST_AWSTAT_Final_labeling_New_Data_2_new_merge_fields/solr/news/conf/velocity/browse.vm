@@ -1,0 +1,52 @@
+#**
+ *  Main entry point into the /browse templates
+ *#
+
+#set($searcher = $request.searcher)
+#set($params = $request.params)
+#set($clusters = $response.response.clusters)
+#set($mltResults = $response.response.get("moreLikeThis"))
+#set($annotate = $params.get("annotateBrowse"))
+#parse('did_you_mean.vm')
+
+#if($params.getBool('mlt', false) == true)
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    ## Show Error Message, if any
+    <div>
+      #parse("error.vm")
+    </div>
+
+    ## Render Results, actual matching docs
+    <div>
+      #parse("results_list.vm")
+    </div>
+  </div>
+#else
+  <div class="navigators col-sm-3 col-md-3 col-lg-3">
+    <div class="well">
+      #parse("facets.vm")
+    </div>
+  </div>
+  <div class="col-sm-8 col-md-8 col-lg-8">
+    ##<div>
+      ###parse("pagination_top.vm")
+    ##</div>
+
+    ## Show Error Message, if any
+    <div>
+      #parse("error.vm")
+    </div>
+
+    ## Render Results, actual matching docs
+    <div>
+      #parse("results_list.vm")
+    </div>
+
+    <div>
+      #parse("pagination_bottom.vm")
+    </div>
+  </div>
+#end
+
+
+

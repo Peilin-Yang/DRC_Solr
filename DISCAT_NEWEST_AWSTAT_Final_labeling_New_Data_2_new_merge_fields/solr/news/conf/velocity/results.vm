@@ -1,0 +1,166 @@
+#**
+ *  Render a hit representing a Product
+ *  assumed to have a field called "name"
+ *#
+
+##changed here
+<div class=""><b></b><div class="mlt"><div>  #if($params.getBool('mlt', false) == false)
+#if($request.params.get('q'))
+  #if($doc.getFieldValues('doctype').get(0) == 'news')
+    #if($doc.getFieldValues('google_title'))
+      <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('google_title')</b></a>
+    #else
+      #if($doc.getFieldValues('title'))
+        <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('title')</b></a>
+      #else
+        <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>News from $doc.getFieldValues('source').get(0)</b></a>
+      #end 
+    #end
+  #else
+    <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('raw_text')</b></a>
+  #end
+#else
+  <a href="#lensNoQ&fq&q=Id:$docId&mlt=true")><b>Link</b></a>
+#end
+</div>
+#set($tett = "#lensNoQ()")
+  #if($doc.getFieldValues('doctype').get(0) == 'news')
+    <span style="color:#006621; font-size:13px;">#field('source')</span>
+    <span>-</span>
+    <span style="color:#666; font-size:13px;">$date.format('EEE, MMM d, yyyy z', $doc.getFieldValues('dt').get(0))</span>
+    <span>-</span>
+    <span style="color:#888; font-size:13px;">#field('event_name')</span>
+    #if($doc.getFieldValues('google_snippet'))
+    <br>
+    <span style="color:#444; font-size:13px;">#field('google_snippet')</span>
+    #end
+  #else
+    <span style="color:#006621; font-size:13px;">@$doc.getFieldValues('tweet_user_raw_name').get(0)</span>
+    <span>-</span>
+    <span style="color:#666; font-size:13px;">#field('dt')</span>
+    <span>-</span>
+    <span style="color:#888; font-size:13px;">#field('event_name')</span>   
+  #end
+#end</div></div>
+
+
+#if($params.getBool('mlt', false) == true)
+#set($Id_docId="Id:$docId ")
+#set ($query_1 = $params.get('q'))
+#foreach($element in $query_1.split(" "))
+    #if( $velocityCount > 1 )
+        #break
+    #end
+    #set ($element_1 = $element)
+#end
+#set($element_2 = $element_1.replace("Id:", ""))
+#if($docId == $element_2)
+#set($query = $request.params.get('q').replace($Id_docId,""))
+
+<div class="row">
+  <div class="col-sm-2 col-md-2 col-lg-2">
+  <a href="#url_for_home#if($request.params.get('debugQuery'))?debugQuery=true#end"><img src="#{url_root}/img/DRC.jpg" id="logo"/></a>
+  </div>
+  <div class="col-sm-9 col-md-9 col-lg-9">
+    <ul>
+      <li><span class="label label-primary" style="margin-right:5px;">Query</span><span>$query</span></li>
+      <li><span class="label label-primary" style="margin-right:5px;">Id</span><span>$docId</span></li>
+      <li>
+        <span class="label label-primary" style="margin-right:5px;">Facets</span><span>
+        #foreach($fq in $request.params.getParams('fq'))
+          #if ($fq != "{!bbox}" && $fq != '')
+            &gt; $fq
+          #end
+        #end
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div style="margin-bottom:5px;"> <strong>Is this document relevant to your query? </strong>
+  <a class="btn btn-success" href="#lensNoQ&q=$query&relevent=true&Id:$docId"><b>Yes</b></a> 
+  <a class="btn btn-danger" href="#lensNoQ&q=$query&relevent=false&Id:$docId"><b>No</b></a> 
+  #if($doc.getFieldValues('doctype').get(0) == 'news')
+  <strong>Have problem of reading the page below? </strong>
+  <a class="btn btn-info" target="_blank" href="#field('url')"><b>Try Original URL</b></a> 
+  #end
+</div>
+
+#end
+#end
+
+##do we have a physical store for this product
+#set($store = $doc.getFieldValue('store'))
+## changed here
+##if($store)<div class="map"><img src="http://maps.google.com/maps/api/staticmap?&zoom=12&size=150x80&maptype=roadmap&markers=$doc.getFieldValue('store')&sensor=false" /><div><small><a target="_map" href="http://maps.google.com/?q=$store&amp;source=embed">Larger Map</a></small></div></div>#end
+##<div>Author, Analytic: #field('Author, Analytic')</div>
+##<div>Author, Monographic: #field('Author, Monographic')</div>
+##<div>Journal Title: #field('Journal Title')</div>
+##<div>ISSN: #field('ISSN')</div>
+
+
+<div class="mlt">
+  #set($mlt = $mltResults.get($docId))
+  #set($mltOn = $params.getBool('mlt'))
+##  #if($mltOn == true)<div class="field-name">Similar Items</div>#end
+  #if ($mltOn && $mlt && $mlt.size() > 0)
+##  <ul>
+##    #foreach($mltHit in $mlt)
+##      #set($mltId = $mltHit.getFieldValue('id'))
+##      <li><div><a href="#url_for_home?q=id:$mltId">$mltId</a></div><div><span class="field-name">Name:</span> $mltHit.getFieldValue('name')</div>
+##        <div><span class="field-name">Price:</span> $!number.currency($mltHit.getFieldValue('price')) <span class="field-name">In Stock:</span> $mltHit.getFieldValue('inStock')</div>
+##
+##      </li>
+##    #end
+##  </ul>
+  #elseif($mltOn && $mlt.size() == 0)
+##    <div>No Similar Items Found</div>
+  #end
+</div>
+
+#set($tett = "#lensNoQ()")
+
+
+#if($mlt)
+#set ($a = 'score')
+#set ($b = 'Id')
+#set ($c = '_version_')
+#set ($d = '')
+#set ($raw_text = 'raw_text')
+#set ($article_url = 'article_page_url')
+#set ($tweet_id = 'tweet_id')
+#set ($query_1 = $params.get('q'))
+
+#foreach($element in $query_1.split(" "))
+    #if( $velocityCount > 1 )
+        #break
+    #end
+    #set ($element_1 = $element)
+#end
+#set($element_2 = $element_1.replace("Id:", ""))
+#if($docId == $element_2)
+#foreach($fieldname in $doc.fieldNames)
+  #if($fieldname.equals($a))
+  #elseif($fieldname.equals($b))
+  #elseif($fieldname.equals($c)) 
+  #elseif($fieldname.equals($raw_text)) 
+  #else
+    #foreach($value in $doc.getFieldValues($fieldname))
+      #if($value.equals($d))
+      #else
+        #if($doc.getFieldValues('doctype').get(0) == 'news' && $fieldname.equals($article_url))
+          <iframe width="100%" height="600" src="http://infolab.ece.udel.edu:8008/crawl_handler/article/$doc.getFieldValues($fieldname).get(0)" onload="resizeIframe(this)"></iframe>
+        #end
+        #if($doc.getFieldValues('doctype').get(0) == 'tweets' && $fieldname.equals($tweet_id))
+      	  <amp-twitter width=486 height=657
+            layout="responsive"
+            data-tweetid="$doc.getFieldValues($fieldname).get(0)">
+        #end
+      #end
+    #end
+  #end
+#end
+#end
+#end
+#parse('debug.vm')

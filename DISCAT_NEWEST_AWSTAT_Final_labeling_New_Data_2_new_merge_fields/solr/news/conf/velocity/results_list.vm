@@ -1,0 +1,36 @@
+#**
+ *  Render the main Results List
+ *#
+
+## Usually displayed inside <div class="results">
+
+#if($response.response.get('grouped'))
+
+  #foreach($grouping in $response.response.get('grouped'))
+    #parse("hit_grouped.vm")
+  #end
+
+#else
+
+  #if($params.getBool('mlt', false) == true)
+    #foreach($doc in $response.results)
+      #set ($query_1 = $params.get('q'))
+      #foreach($element in $query_1.split(" "))
+        #if( $velocityCount > 1 )
+          #break
+        #end
+        #set ($element_1 = $element)
+      #end
+
+      #set($element_2 = $element_1.replace("Id:", ""))
+      #if($doc.getFieldValue('Id') == $element_2)  
+        #parse("hit.vm")
+      #end 
+    #end
+  #else
+   #foreach($doc in $response.results)
+    #parse("hit.vm")
+   #end
+  #end
+
+#end

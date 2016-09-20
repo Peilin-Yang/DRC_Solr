@@ -1,0 +1,57 @@
+<add>
+  <doc>
+    <field name="Abstract"></field>
+    <field name="Analytic_Author_Role"></field>
+    <field name="Analytic_Connective_Phrase"></field>
+    <field name="Analytic_Medium_Designator"></field>
+    <field name="Author_Affiliation"></field>
+    <field name="Author_Analytic">Stross, Randall</field>
+    <field name="Author_Monographic"></field>
+    <field name="Author_Subsidiary"></field>
+    <field name="Availability"></field>
+    <field name="CODEN"></field>
+    <field name="Call_Number">962.S7.A5 (VF)</field>
+    <field name="Date_of_Copyright"></field>
+    <field name="Date_of_Publication">2006 March 12</field>
+    <field name="Document_Type"></field>
+    <field name="Edition"></field>
+    <field name="Extent_of_Work"></field>
+    <field name="ISBN"></field>
+    <field name="ISSN"></field>
+    <field name="Id">37564</field>
+    <field name="Issue_ID"></field>
+    <field name="Journal_Title"></field>
+    <field name="Keywords">Computer Technology</field>
+    <field name="Location_URL">http://www.nytimes.com/2006/03/12/business/yourmoney/12digi.html?mabReward=relbias:w,{&quot;2&quot;:&quot;RI:16&quot;}&amp;adxnnl=1&amp;module=Search&amp;pagewanted=all&amp;adxnnlx=1412101360-EiyMQ67i1jMWSnPXc6JgTw</field>
+    <field name="Location_in_Work">5</field>
+    <field name="Monographic_Author_Role"></field>
+    <field name="Monographic_Connective_Phrase"></field>
+    <field name="Monographic_Medium_Designator"></field>
+    <field name="Notes">Last Accessed 2014 Sept. 30</field>
+    <field name="Packaging_Method"></field>
+    <field name="Place_of_Meeting"></field>
+    <field name="Place_of_Publication">New York</field>
+    <field name="Publisher_Name">The New York Times</field>
+    <field name="Report_ID"></field>
+    <field name="Reprint_Status"></field>
+    <field name="Reproduction_Ratio"></field>
+    <field name="Series_Editor"></field>
+    <field name="Series_Editor_Role"></field>
+    <field name="Series_Issue_ID"></field>
+    <field name="Series_Title"></field>
+    <field name="Series_Volume_ID"></field>
+    <field name="Size"></field>
+    <field name="Subsidiary_Author_Role"></field>
+    <field name="Title">The New York Times</field>
+    <field name="Title_Analytic">ANONYMOUS SOURCE IS NOT THE SAME AS OPEN SOURCE</field>
+    <field name="Title_Monographic"></field>
+    <field name="Volume_ID"></field>
+    <field name="Workform">Newspaper </field>
+    <field name="Date_combination"> | 2006 March 12</field>
+    <field name="Author_combination">Stross, Randall |  |  | </field>
+    <field name="Title_combination"> | The New York Times | ANONYMOUS SOURCE IS NOT THE SAME AS OPEN SOURCE | </field>
+  </doc>
+</add>
+
+
+

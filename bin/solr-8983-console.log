@@ -1,0 +1,215 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option PermSize=256m; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option CMSTriggerPermRatio=80; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: CMSFullGCsBeforeCompaction is deprecated and will likely be removed in a future release.
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 22).
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory (errno = 1).
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+39   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/ypeilin/DRC_Project/solr-4.10.0/example/contexts at interval 0
+49   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/ypeilin/DRC_Project/solr-4.10.0/example/contexts/solr-jetty-context.xml
+1164 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1240 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1269 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1269 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr
+1277 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/'
+1451 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/solr.xml
+1705 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr
+1729 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1259174396
+1729 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/]
+1750 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1750 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+1755 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1755 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1757 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1757 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1757 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1758 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1758 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+2147 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+2149 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2150 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2151 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+2199 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/ypeilin/DRC_Project/solr-4.10.0/example/solr
+2217 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/
+2218 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+2219 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/'
+2337 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+2339 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+2339 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/poi-scratchpad-3.10.1.jar' to classloader
+2340 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2340 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/poi-ooxml-schemas-3.10.1.jar' to classloader
+2340 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+2340 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+2340 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/jhighlight-1.0.jar' to classloader
+2341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/rome-0.9.jar' to classloader
+2341 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2342 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2342 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/pdfbox-1.8.4.jar' to classloader
+2342 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2343 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/tika-parsers-1.5.jar' to classloader
+2343 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2343 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/commons-compress-1.7.jar' to classloader
+2344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/icu4j-53.1.jar' to classloader
+2344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/tika-core-1.5.jar' to classloader
+2344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2344 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2345 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+2345 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/aspectjrt-1.6.11.jar' to classloader
+2345 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/poi-ooxml-3.10.1.jar' to classloader
+2346 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/tika-xmp-1.5.jar' to classloader
+2346 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/xz-1.4.jar' to classloader
+2346 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2347 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+2347 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/poi-3.10.1.jar' to classloader
+2347 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/fontbox-1.8.4.jar' to classloader
+2347 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/extraction/lib/jempbox-1.8.4.jar' to classloader
+2350 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/dist/solr-cell-4.10.0.jar' to classloader
+2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2353 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/dist/solr-clustering-4.10.0.jar' to classloader
+2353 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2354 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2354 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/dist/solr-langid-4.10.0.jar' to classloader
+2355 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2355 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+2355 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2356 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2356 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ypeilin/DRC_Project/solr-4.10.0/dist/solr-velocity-4.10.0.jar' to classloader
+2799 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+2810 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.10.0
+2970 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+2978 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from schema.xml
+3046 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [collection1] Schema name=example
+3471 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+3488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+3488 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+3601 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+3605 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+3756 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'collection1' using configuration from instancedir /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/
+3805 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+3813 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Opening new SolrCore at /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/, dataDir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/
+3819 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@6f94fa3e
+3846 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+3847 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+3874 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data
+3895 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index/
+3895 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index
+3909 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+3909 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+3910 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+3912 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+3912 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+3984 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+3994 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+3998 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+4000 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+4001 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+4005 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+4007 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+4009 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+4009 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /export: solr.SearchHandler
+4010 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+4012 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+4012 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+4013 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+4013 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+4014 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+4014 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+4014 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+4014 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+4016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+4019 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+4022 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+4034 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+4034 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+4035 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+4035 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+4035 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /suggest: solr.SearchHandler
+4036 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+4036 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+4036 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+4037 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+4037 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+4037 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+4108 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+4111 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+4112 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+4112 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+4113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+4186 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+4186 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: if uncommited for 3000ms; 
+4294 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index lockFactory=NativeFSLockFactory@/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1r,generation=63}
+4295 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 63
+4359 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@2afe69ef[collection1] main
+4364 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4364 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf}
+4365 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4368 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+4368 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 2 registered ManagedResources
+4368 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_stopwords_english.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4369 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4369 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+4369 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded 35 words for /schema/analysis/stopwords/english
+4370 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/stopwords/english
+4370 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _schema_analysis_synonyms_english.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4370 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf
+4371 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+4371 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+4373 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Notified 1 observers of /schema/analysis/synonyms/english
+4373 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+4381 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+4382 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+4383 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Initializing SuggestComponent
+4385 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+4398 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+4399 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/conf/elevate.xml
+4423 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+4424 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@2afe69ef[collection1] main{StandardDirectoryReader(segments_1r:154:nrt _15(4.10.0):C3)}
+4474 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=1 status=0 QTime=46 
+4480 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+4481 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+4481 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SuggestComponent  – Loading suggester index for: mySuggester
+4481 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – reload()
+4481 [searcherExecutor-6-thread-1] INFO  org.apache.solr.spelling.suggest.SolrSuggester  – build()
+4502 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@2afe69ef[collection1] main{StandardDirectoryReader(segments_1r:154:nrt _15(4.10.0):C3)}
+4505 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: collection1
+4507 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/ypeilin/DRC_Project/solr-4.10.0/example
+4507 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+4556 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+34018 [qtp1690254271-21] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1454612260073} status=0 QTime=3 
+34106 [qtp1690254271-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1454612260117} status=0 QTime=30 
+36116 [qtp1690254271-19] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1454612262146} status=0 QTime=1 
+36117 [qtp1690254271-20] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1454612262146} status=0 QTime=3 
+36217 [qtp1690254271-20] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1454612262198} status=0 QTime=1 
+36218 [qtp1690254271-19] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1454612262189} status=0 QTime=4 
+36218 [qtp1690254271-21] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/replication params={wt=json&command=details&_=1454612262195} status=0 QTime=3 
+36220 [qtp1690254271-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1454612262200} status=503 QTime=4 
+36226 [qtp1690254271-17] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/system params={wt=json&_=1454612262197} status=0 QTime=9 
+54239 [qtp1690254271-19] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1454612280294} hits=3 status=0 QTime=1 
+138446 [ShutdownMonitor] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown SocketConnector@0.0.0.0:8983
+138447 [ShutdownMonitor] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/ypeilin/DRC_Project/solr-4.10.0/example/solr-webapp/webapp/},/home/ypeilin/DRC_Project/solr-4.10.0/example/webapps/solr.war
+139448 [ShutdownMonitor] INFO  org.apache.solr.core.CoreContainer  – Shutting down CoreContainer instance=1259174396
+139449 [ShutdownMonitor] INFO  org.apache.solr.core.SolrCore  – [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@1e00e450
+139461 [ShutdownMonitor] INFO  org.apache.solr.update.UpdateHandler  – closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommit maxTime=3000ms,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=2109,transaction_logs_total_number=10}
+139461 [ShutdownMonitor] INFO  org.apache.solr.update.SolrCoreState  – Closing SolrCoreState
+139462 [ShutdownMonitor] INFO  org.apache.solr.update.DefaultSolrCoreState  – SolrCoreState ref count has reached 0 - closing IndexWriter
+139462 [ShutdownMonitor] INFO  org.apache.solr.update.DefaultSolrCoreState  – closing IndexWriter with IndexWriterCloser
+139470 [ShutdownMonitor] INFO  org.apache.solr.core.SolrCore  – [collection1] Closing main searcher on request.
+139473 [ShutdownMonitor] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+139474 [ShutdownMonitor] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data [CachedDir<<refCount=0;path=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data;done=false>>]
+139474 [ShutdownMonitor] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data
+139474 [ShutdownMonitor] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index [CachedDir<<refCount=0;path=/home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index;done=false>>]
+139475 [ShutdownMonitor] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /home/ypeilin/DRC_Project/solr-4.10.0/example/solr/collection1/data/index
+139483 [ShutdownMonitor] INFO  org.eclipse.jetty.server.handler.ContextHandler  – stopped o.e.j.w.WebAppContext{/solr,file:/home/ypeilin/DRC_Project/solr-4.10.0/example/solr-webapp/webapp/},/home/ypeilin/DRC_Project/solr-4.10.0/example/webapps/solr.war

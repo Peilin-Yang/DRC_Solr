@@ -1,0 +1,27 @@
+#**
+ *  Provides navigation/access to Advanced search options
+ *  Usually displayed near the top of the page
+ *#
+
+##TODO: Make some nice tabs here
+
+#set($queryOpts = $params.get("queryOpts"))
+<div class="col-sm-2 col-md-2 col-lg-2">
+<a href="#url_for_home#if($request.params.get('debugQuery'))?debugQuery=true#end"><img src="#{url_root}/img/DRC.jpg" id="logo"/></a>
+</div>
+<div class="col-sm-1 col-md-1 col-lg-1">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" id="adminDropdown" aria-haspopup="true" aria-expanded="false">
+      Admin <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a id="admin_download" href="">Download Results</a></li>
+      <li><a href="#{url_root}/#/news/documents?Id=$results">Record Modification</a></li>
+      ##<li><a href="#{url_root}/awstats/wwwroot/cgi-bin/awstats.DRC.html">User Statistics</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-sm-8 col-md-8 col-lg-8">
+  #parse('query_form.vm')
+</div>
+</div>

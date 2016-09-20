@@ -1,0 +1,16 @@
+#**
+ *  Called for each matching document but then
+ *  calls one of product_doc, join_doc or richtext_doc
+ *  depending on which fields the doc has
+ *#
+
+#set($docId = $doc.getFieldValue('Id'))
+
+#if($params.getBool('mlt', false) == true)
+  <div class="container well">
+#else
+  <div class="well">
+#end
+  #parse("results.vm")
+</div>
+

@@ -1,0 +1,57 @@
+<add>
+  <doc>
+    <field name="Abstract"></field>
+    <field name="Analytic_Author_Role"></field>
+    <field name="Analytic_Connective_Phrase"></field>
+    <field name="Analytic_Medium_Designator"></field>
+    <field name="Author_Affiliation"></field>
+    <field name="Author_Analytic"></field>
+    <field name="Author_Monographic"></field>
+    <field name="Author_Subsidiary"></field>
+    <field name="Availability"></field>
+    <field name="CODEN"></field>
+    <field name="Call_Number">150.N3.9</field>
+    <field name="Date_of_Copyright"></field>
+    <field name="Date_of_Publication">1997</field>
+    <field name="Document_Type"></field>
+    <field name="Edition"></field>
+    <field name="Extent_of_Work"></field>
+    <field name="ISBN"></field>
+    <field name="ISSN"></field>
+    <field name="Id">37566</field>
+    <field name="Issue_ID"></field>
+    <field name="Journal_Title"></field>
+    <field name="Keywords">Disaster Preparedness, Mitigation, Government</field>
+    <field name="Location_URL"></field>
+    <field name="Location_in_Work"></field>
+    <field name="Monographic_Author_Role"></field>
+    <field name="Monographic_Connective_Phrase"></field>
+    <field name="Monographic_Medium_Designator"></field>
+    <field name="Notes">1) Strategic Plan{1) Goal/Opportunity 2) Policy Questions 3) Scientific Goal}</field>
+    <field name="Packaging_Method"></field>
+    <field name="Place_of_Meeting"></field>
+    <field name="Place_of_Publication">Washington, D.C.</field>
+    <field name="Publisher_Name">US Government Printing Office</field>
+    <field name="Report_ID"></field>
+    <field name="Reprint_Status">03/29/00</field>
+    <field name="Reproduction_Ratio"></field>
+    <field name="Series_Editor"></field>
+    <field name="Series_Editor_Role"></field>
+    <field name="Series_Issue_ID"></field>
+    <field name="Series_Title"></field>
+    <field name="Series_Volume_ID"></field>
+    <field name="Size"></field>
+    <field name="Subsidiary_Author_Role"></field>
+    <field name="Title"></field>
+    <field name="Title_Analytic"></field>
+    <field name="Title_Monographic">NATURAL DISASTER REDUCTION: A PLAN FOR THE NATION</field>
+    <field name="Volume_ID"></field>
+    <field name="Workform">Book_Short_Form </field>
+    <field name="Date_combination"> | 1997</field>
+    <field name="Author_combination"> |  |  | </field>
+    <field name="Title_combination"> |  |  | NATURAL DISASTER REDUCTION: A PLAN FOR THE NATION</field>
+  </doc>
+</add>
+
+
+

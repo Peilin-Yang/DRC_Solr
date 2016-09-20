@@ -1,0 +1,2 @@
+10.21.1.1 -  -  [29/Jun/2016:10:18:09 -0400] "GET /solr/collection1/browse HTTP/1.0" 200 8234 
+10.21.1.1 -  -  [29/Jun/2016:23:28:08 -0400] "GET /solr/collection1/browse HTTP/1.0" 200 8233 

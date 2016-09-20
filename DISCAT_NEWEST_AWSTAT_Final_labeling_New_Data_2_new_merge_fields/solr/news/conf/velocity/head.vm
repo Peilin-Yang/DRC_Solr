@@ -1,0 +1,46 @@
+#**
+ *  Provide elements for the <head> section of the HTML document
+ *#
+
+  ## An example of using an arbitrary request parameter
+  <title>#param('title')</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript">
+    function resizeIframe(iframe) {
+      iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
+  </script>  
+  <link rel="stylesheet" type="text/css" href="#{url_for_solr}/admin/file?file=/velocity/main.css&contentType=text/css"/>
+  <link rel="stylesheet" href="#{url_for_solr}/admin/file?file=/velocity/jquery.autocomplete.css&contentType=text/css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="#{url_for_solr}/admin/file?file=/velocity/jquery.autocomplete.js&contentType=text/javascript"></script>
+  <script type="text/javascript" src="#{url_for_solr}/admin/file?file=/velocity/buttons.js&contentType=text/javascript"></script>
+
+  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-template="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("\#q").autocomplete('#{url_for_solr}/terms', {  ## backslash escaped #q as that is a macro defined in VM_global_library.vm
+           extraParams:{
+             'terms.prefix': function() { return $("\#q").val();},
+             'terms.sort': 'count',
+             'terms.fl': 'event_name',
+             'wt': 'velocity',
+             'v.template': 'suggest'
+           }
+         }
+      ).keydown(function(e){
+        if (e.keyCode === 13){
+          $("#query-form").trigger('submit');
+        }
+      });
+
+    });
+
+    </script>

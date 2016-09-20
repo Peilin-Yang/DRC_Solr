@@ -1,0 +1,106 @@
+#**
+ *  Render a hit representing a Product
+ *  assumed to have a field called "name"
+ *#
+
+##changed here
+<div class="result-title"><b></b><span class="mlt">  #if($params.getBool('mlt', false) == false)
+#if($request.params.get('q'))
+<a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>Link</b></a>
+#else
+<a href="#lensNoQ&fq&q=Id:$docId&mlt=true")><b>Link</b></a>
+#end
+
+#set($tett = "#lensNoQ()")
+#if(!$mlt)
+<div>Id: #field('Id')</div>
+<div>Author combination: #field('Author_combination')</div>
+<div>Title combination: #field('Title_combination')</div>
+<div>Date of Pub.(orig): #field('Date_of_Publication')</div>
+<div>Date of Pub.(new): #field('Date_of_Publication_new')</div>
+<div>is_dt_available: #field('is_dt_available')</div>
+<div>Location/URL: #field('Location_URL')</div>
+#end
+
+#end</span></div>
+
+#if($params.getBool('mlt', false) == true)
+#set($Id_docId="Id:$docId ")
+#set ($query_1 = $params.get('q'))
+#foreach($element in $query_1.split(" "))
+    #if( $velocityCount > 1 )
+        #break
+    #end
+    #set ($element_1 = $element)
+#end
+#set($element_2 = $element_1.replace("Id:", ""))
+#if($docId == $element_2)
+#set($query = $request.params.get('q').replace($Id_docId,""))
+<div class="Relevant" style="color: #ffffff; background-color: #ff0000">Relevant ? <a href="#lensNoQ&q=$query&relevent=true&Id:$docId"><b>Yes</b></a> <a href="#lensNoQ&q=$query&relevent=false&Id:$docId"><b>No</b></a> </div>
+#end
+#end
+
+##do we have a physical store for this product
+#set($store = $doc.getFieldValue('store'))
+## changed here
+##if($store)<div class="map"><img src="http://maps.google.com/maps/api/staticmap?&zoom=12&size=150x80&maptype=roadmap&markers=$doc.getFieldValue('store')&sensor=false" /><div><small><a target="_map" href="http://maps.google.com/?q=$store&amp;source=embed">Larger Map</a></small></div></div>#end
+##<div>Author, Analytic: #field('Author, Analytic')</div>
+##<div>Author, Monographic: #field('Author, Monographic')</div>
+##<div>Journal Title: #field('Journal Title')</div>
+##<div>ISSN: #field('ISSN')</div>
+
+
+##<div class="mlt">
+  #set($mlt = $mltResults.get($docId))
+  #set($mltOn = $params.getBool('mlt'))
+##  #if($mltOn == true)<div class="field-name">Similar Items</div>#end
+  #if ($mltOn && $mlt && $mlt.size() > 0)
+##  <ul>
+##    #foreach($mltHit in $mlt)
+##      #set($mltId = $mltHit.getFieldValue('id'))
+##      <li><div><a href="#url_for_home?q=id:$mltId">$mltId</a></div><div><span class="field-name">Name:</span> $mltHit.getFieldValue('name')</div>
+##        <div><span class="field-name">Price:</span> $!number.currency($mltHit.getFieldValue('price')) <span class="field-name">In Stock:</span> $mltHit.getFieldValue('inStock')</div>
+##
+##      </li>
+##    #end
+##  </ul>
+  #elseif($mltOn && $mlt.size() == 0)
+##    <div>No Similar Items Found</div>
+  #end
+</div>
+
+#set($tett = "#lensNoQ()")
+
+
+#if($mlt)
+#set ($b = 'Id')
+#set ($c = '_version_')
+#set ($a = 'score')
+#set ($d = '')
+#set ($query_1 = $params.get('q'))
+
+#foreach($element in $query_1.split(" "))
+    #if( $velocityCount > 1 )
+        #break
+    #end
+    #set ($element_1 = $element)
+#end
+#set($element_2 = $element_1.replace("Id:", ""))
+#if($docId == $element_2)
+#foreach($fieldname in $doc.fieldNames)
+  #if($fieldname.equals($a))
+  #elseif($fieldname.equals($b))
+  #elseif($fieldname.equals($c)) 
+  #else
+    #foreach($value in $doc.getFieldValues($fieldname))
+      #if($value.equals($d))
+      #else
+	 <div class="result-details-field">$fieldname.replace("_", " ")</div>
+     <div>#field($fieldname)</div>
+      #end
+    #end
+  #end
+#end
+#end
+#end
+#parse('debug.vm')

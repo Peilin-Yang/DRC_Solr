@@ -1,0 +1,385 @@
+AWSTATS DATA FILE 7.3 (build 20140126)
+# If you remove this file, all statistics for date 201501 will be lost/reset.
+# Last config file used to build this data file was ./awstats.DRC.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2008                
+POS_TIME 2695                
+POS_VISITOR 6813                
+POS_DAY 6928                
+POS_DOMAIN 3250                
+POS_LOGIN 3482                
+POS_ROBOT 3674                
+POS_WORMS 3806                
+POS_EMAILSENDER 3937                
+POS_EMAILRECEIVER 4080                
+POS_SESSION 7137                
+POS_SIDER 7321                
+POS_FILETYPES 4215                
+POS_DOWNLOADS 4428                
+POS_OS 4476                
+POS_BROWSER 4558                
+POS_SCREENSIZE 4625                
+POS_UNKNOWNREFERER 4699                
+POS_UNKNOWNREFERERBROWSER 4786                
+POS_ORIGIN 4868                
+POS_SEREFERRALS 5003                
+POS_PAGEREFS 5147                
+POS_SEARCHWORDS 5295                
+POS_KEYWORDS 5447                
+POS_MISC 2359                
+POS_ERRORS 5506                
+POS_CLUSTER 3338                
+POS_SIDER_404 5627                
+POS_EXTRA_1 6334                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150201001955 1253 144439 3839645736082
+FirstTime 20150116155657
+LastTime 20150129162851
+LastUpdate 20150615221404 1253 1027 225 0 0
+TotalVisits 10                  
+TotalUnique 1                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 1                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+FlashSupport 0 0 0
+PDFSupport 0 0 0
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 6 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 21 73 238721 0 0 0
+1 56 177 2047863 0 0 0
+2 85 157 2504448 3 114 205529
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 0 0 0 0 0 0
+6 0 0 0 0 0 0
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 0 0 0 0 0 0
+14 0 0 0 0 0 0
+15 26 116 1628049 3 6 5304
+16 298 711 4906067 5 8 42604
+17 0 0 0 0 0 0
+18 0 0 0 0 0 0
+19 24 28 502017 1 25 32214
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 21 74 1631361 0 0 0
+23 0 0 0 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 531 1336 13458526
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 1
+_-_ 531 1336 13458526 20150129162851
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+js 457 6869805 0 0
+html 30 187764 0 0
+png 79 67366 0 0
+Unknown 443 4616220 0 0
+gif 4 5292 0 0
+php 58 1086447 0 0
+jpg 31 52472 0 0
+css 234 573160 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 1
+Unknown 1336 531
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 1
+Unknown 1336 531
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 0 0
+From1 531 1336
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+503 3 654
+404 137 176625
+500 6 101480
+302 1 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 24
+/icon/clock/hr7.png 6 
+/solr/collection1/admin/indicator.gif 3 
+/icon/clock/hr10.png 6 
+/icon/clock/hr11.png 6 
+/icon/clock/hr3.png 6 
+/icon/clock/hr1.png 6 
+/icon/flags/ip.png 6 
+/icon/other/vk.png 6 
+/icon/other/vh.png 6 
+/icon/other/vp.png 6 
+/icon/clock/hr2.png 6 
+/icon/other/vv.png 6 
+/icon/other/awstats_logo6.png 6 
+/icon/clock/hr5.png 6 
+/icon/clock/hr8.png 6 
+/icon/clock/hr6.png 6 
+/icon/other/vu.png 6 
+/icon/other/hp.png 6 
+/icon/clock/hr9.png 6 
+/icon/clock/hr12.png 6 
+/solr/techproducts/browse 2 
+/icon/other/hk.png 6 
+/icon/other/hh.png 6 
+/icon/clock/hr4.png 6 
+END_SIDER_404
+
+# Extra key - Pages - Hits - Bandwidth - Last access
+# The 10 first number of hits are first
+BEGIN_EXTRA_1 5
+Mental+Health 4 4 99108 20150129162851
+Disaster 1 1 24275 20150116155659
+test 1 1 25024 20150116160058
+location 1 1 28701 20150116160208
+yulin+zhang 1 1 11245 20150122195429
+END_EXTRA_1
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1
+127.0.0.1 531 1336 13458526 20150129162851
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 6
+20150116 270 681 4539203 2
+20150117 21 74 1631361 1
+20150121 130 370 4288141 2
+20150122 20 22 350223 1
+20150128 37 129 1897086 1
+20150129 53 60 752512 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+15mn-30mn 2
+2mn-5mn 1
+1h+ 1
+0s-30s 4
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 105
+/solr/collection1/admin/file?file=/velocity/main.css&contentType=text/css 103 296434 0 1
+/solr/collection1/admin/file?file=/velocity/jquery.autocomplete.js&contentType=text/javascript 103 2059073 0 6
+/solr/collection1/admin/file?file=/velocity/jquery.autocomplete.css&contentType=text/css 103 82091 0 1
+/solr/collection1/browse?&queryOpts=spatial 41 1283929 3 0
+/solr/collection1/browse/ 35 995081 0 0
+/solr/browse 17 483328 4 0
+/solr/ 14 82600 2 0
+/solr/tpl/documents.html 14 69104 0 0
+/solr/awstats/wwwroot/cgi-bin/awstats.DRC.html 5 56350 0 2
+/solr/admin/cores?wt=json&_=1421802109568 1 1043 0 0
+/solr/admin/cores?wt=json&_=1421426872144 1 1070 0 0
+/solr/admin/info/system?wt=json&_=1422459995938 1 3655 0 0
+/solr/collection1/browse?&q=Mental+Health&start=30 1 25363 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-top.html&contentType=text/html;charset=utf-8&_=1421426875209 1 926 0 0
+/solr/collection1/schema/fields?_=1421426518083 1 6063 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421426505989 1 454 0 0
+/solr/collection1/admin/luke?wt=json&show=index&numTerms=0&_=1422459999234 1 635 0 0
+/solr/admin/info/system?wt=json&_=1421533086757 1 3534 0 0
+/solr/admin/info/system?wt=json&_=1422500186602 1 3658 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-bottom.html&contentType=text/html;charset=utf-8&_=1422500189638 1 928 0 0
+/solr/collection1/admin/file/?file=admin-extra.html&_=1422500189748 1 1068 0 0
+/solr/collection1/admin/system?wt=json&_=1422500189747 1 4219 0 0
+/solr/collection1/terms?q=yuli&limit=10&timestamp=1421956465744&terms.prefix=yuli&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest 1 2 0 0
+/solr/collection1/schema/fields?_=1421800407546 1 6064 0 0
+/solr/collection1/schema/fields?_=1421426507566 1 6064 0 0
+/solr/tpl/index.html?_=1421802117175 1 6141 0 0
+/solr/collection1/browse 1 28431 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-bottom.html&contentType=text/html;charset=utf-8&_=1422459999195 1 928 0 0
+/solr/collection1/browse?&q=Mental+Health&start=10 1 24230 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421533086733 1 451 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1422459995917 1 467 0 0
+/solr/collection1/schema/fields?_=1421427267663 1 6063 0 0
+/solr/admin/cores?wt=json&action=RELOAD&core=collection1&_=1421426871693 1 44 0 0
+/solr/collection1/replication?command=details&wt=json&_=1422459999241 1 2084 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-top.html&contentType=text/html;charset=utf-8&_=1422459999192 1 926 0 0
+/solr/admin/cores?wt=json&_=1421802109542 1 1043 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421427273453 1 453 0 0
+/solr/admin/info/system?wt=json&_=1421427266503 1 3533 0 0
+/solr/collection1/schema/fields?_=1421806482115 1 6064 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-bottom.html&contentType=text/html;charset=utf-8&_=1421426875211 1 928 0 0
+/solr/admin/info/system?wt=json&_=1421426863909 1 3534 0 0
+/solr/collection1/browse?q=Disaster 1 24275 0 0
+/solr/collection1/browse?&q=Mental+Health&start=20 1 25416 0 0
+/solr/tpl/cores.html?_=1421802109579 1 6973 0 0
+/solr/admin/info/system?wt=json&_=1421426825252 1 3536 0 0
+/solr/admin/info/logging?wt=json&since=0&_=1421802110073 1 497 0 0
+/solr/collection1/terms?q=mental+heal&limit=10&timestamp=1422547649104&terms.prefix=Mental+Heal&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest 1 2 0 0
+/solr/collection1/replication?command=details&wt=json&_=1421426875230 1 2077 0 0
+/solr/admin/info/system?wt=json&_=1421426506010 1 3530 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421426863890 1 454 0 0
+/solr/collection1/terms?q=dis&limit=10&timestamp=1421423817420&terms.prefix=Dis&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest 1 2 1 0
+/solr/admin/cores?wt=json&_=1421802112955 1 1043 0 0
+/solr/collection1/schema/fields?_=1421426826978 1 6063 0 0
+/solr/collection1/admin/system?wt=json&_=1421426875232 1 4066 0 0
+/solr/admin/info/system?wt=json&_=1421427273472 1 3534 0 0
+/solr/collection1/admin/luke?wt=json&show=index&numTerms=0&_=1421426875223 1 621 0 0
+/solr/admin/info/system?wt=json&_=1421426516473 1 3536 0 0
+/solr/tpl/cores.html?_=1421426868868 1 6973 0 0
+/solr/collection1/schema/fields?_=1422460002330 1 6065 0 0
+/solr/admin/info/system?wt=json&_=1421800405441 1 3536 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421802180811 1 438 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421426516452 1 454 0 0
+/solr/collection1/schema/fields?_=1421426775850 1 6063 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421802104838 1 437 0 0
+/solr/collection1/browse?q=yulin+zhang&pt=none&d=&sfield=store&fq=&queryOpts=spatial&queryOpts=spatial 1 11245 0 0
+/solr/admin/cores?wt=json&_=1421802115844 1 1042 0 0
+/solr/collection1/admin/file/?file=admin-extra.menu-top.html&contentType=text/html;charset=utf-8&_=1422500189637 1 926 0 0
+/solr/admin/cores?wt=json&_=1421426868845 1 1073 0 0
+/solr/tpl/index.html?_=1421802104881 1 6141 0 0
+/solr/admin/cores?wt=json&_=1421802112938 1 1043 0 0
+/solr/tpl/cores.html?_=1421802112966 1 6973 0 0
+/solr/collection1/replication?command=details&wt=json&_=1422500189746 1 2084 0 0
+/solr/collection1/browse?q=location 1 28701 0 0
+/solr/admin/cores?wt=json&action=RELOAD&core=collection1&_=1421802115402 1 44 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1422500186542 1 466 0 0
+/solr/collection1/terms?q=yulin+zhang&limit=10&timestamp=1421956469548&terms.prefix=yulin+zhang&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest 1 2 0 0
+/solr/tpl/dashboard.html?_=1421426875213 1 5331 0 0
+/solr/tpl/dashboard.html?_=1422459999197 1 5331 0 0
+/solr/collection1/schema/fields?_=1421533088802 1 6064 0 0
+/solr/browse?q=twitter 1 30128 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421426825234 1 454 0 0
+/solr/collection1/schema/fields?_=1421802182527 1 6064 0 0
+/solr/admin/cores?wt=json&_=1421426868859 1 1073 0 0
+/solr/tpl/index.html?_=1422459995955 1 6141 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421427266484 1 453 0 0
+/solr/collection1/schema/fields?_=1421427275324 1 6063 0 0
+/solr/collection1/admin/file/?file=admin-extra.html&_=1421426875233 1 1068 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421426773217 1 454 0 0
+/solr/tpl/dashboard.html?_=1422500189638 1 5331 0 0
+/solr/collection1/browse?q=test 1 25024 0 0
+/solr/collection1/browse?q=Mental+Health 1 24099 0 0
+/solr/admin/info/system?wt=json&_=1421426773238 1 3533 0 0
+/solr/tpl/index.html?_=1422500186639 1 6141 0 0
+/solr/collection1/admin/system?wt=json&_=1422459999242 1 4216 0 0
+/solr/collection1/schema/fields?_=1421426865548 1 6063 0 0
+/solr/collection1/admin/file/?file=admin-extra.html&_=1422459999244 1 1068 0 0
+/solr/tpl/logging.html?_=1421802110069 1 834 0 0
+/solr/collection1/admin/luke?wt=json&show=index&numTerms=0&_=1422500189743 1 635 0 0
+/solr/collection1/schema/fields?_=1421426879437 1 6063 0 0
+/solr/admin/info/system?wt=json&_=1421802180831 1 3421 0 0
+/solr/collection1/terms?q=yulin+&limit=10&timestamp=1421956466753&terms.prefix=yulin+&terms.sort=count&terms.fl=name&wt=velocity&v.template=suggest 1 2 0 0
+/solr/admin/info/system?wt=json&_=1421806480485 1 3655 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421806480463 1 466 0 0
+/solr/admin/info/system?wt=json&_=1421802104860 1 3417 0 0
+/solr/admin/cores?wt=json&indexInfo=false&_=1421800405419 1 452 0 0
+END_SIDER
