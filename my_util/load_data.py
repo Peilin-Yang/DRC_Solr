@@ -22,21 +22,19 @@ def main():
     REMOTE_ROOT = "/infolab/infolab5/ypeilin/Installation/htdocs/DRC_Project/solr-4.10.0/"
     root_dir = process.communicate()[0].rstrip()
         
-    ignore_file = os.path.join(root_dir,".gitignore")
+    data_dir = [
+        "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/solr/collection1/data",
+        "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/solr/news/data"
+    ]
+    
+    for name in data_dir:
+        source_dir = os.path.join(REMOTE_ROOT,name)
+        dest_dir = os.path.join(root_dir,name)
+        cmd = "scp -r infolab:%s %s"\
+                %(source_dir,dest_dir)
 
-    with open(ignore_file) as f:
-        for line in f:
-            name = line.rstrip()
-            if "example" in name:
-                continue
-            else:
-                source_dir = os.path.join(REMOTE_ROOT,name)
-                dest_dir = os.path.join(root_dir,name)
-                cmd = "scp -r infolab:%s %s"\
-                        %(source_dir,dest_dir)
-
-                os.system(cmd)
-                #print cmd
+        os.system(cmd)
+        #print cmd
 
 
     
