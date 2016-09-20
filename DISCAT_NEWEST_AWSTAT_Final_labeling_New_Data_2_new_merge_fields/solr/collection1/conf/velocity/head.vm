@@ -49,19 +49,9 @@
         window.location.href = '#{url_for_solr}/browse';
       });
       
-      $('#example').multiselect();
 
       // http://localhost:8983/solr/collection1/terms?terms.fl=name&terms.prefix=i&terms.sort=count&wt=velocity&v.template=suggest
     });
 
     </script>
-    <style type="text/css">
-        .multiselect {
-            width: 450px;
-            height: 200px;
-        }
-        .multiselect-container {
-            overflow:visible;
-            width:100%;
-        }
-    </style>
+

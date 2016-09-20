@@ -63,11 +63,5 @@
 
   </form>
 </div>
-<div class="multiselect-container">
-    <select id="example" name="example" class="multiselect" multiple="multiple" style="width:50%">
-      <option value="3">Option 3</option>
-      <option value="4">Option 4</option>
-      <option value="5">Option 5</option>
-    </select>
-</div>
+
 
