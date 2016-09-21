@@ -10,7 +10,11 @@
 #foreach ($field in $response.response.facet_counts.facet_ranges)
   ## Hide facets without value
   #if($field.value.counts.size() > 0)
-	#set($name = $field.key)
+	#if($field.key == "dt")
+        #set($name = 'Time Range')
+    #else
+        #set($name = $field.key)
+    #end
 	#set($display = $name)
 	#set($f = $field.value.counts)
 	#set($start = $field.value.start)
