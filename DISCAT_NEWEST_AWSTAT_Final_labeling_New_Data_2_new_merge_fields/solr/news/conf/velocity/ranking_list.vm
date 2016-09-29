@@ -8,19 +8,19 @@
 #if($request.params.get('q'))
   #if($doc.getFieldValues('doctype').get(0) == 'news')
     #if($doc.getFieldValues('google_title'))
-      <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('google_title')</b></a>
+      <a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('google_title')</b></a>
     #else
       #if($doc.getFieldValues('title'))
-        <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('title')</b></a>
+        <a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('title')</b></a>
       #else
-        <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>News from $doc.getFieldValues('source').get(0)</b></a>
+        <a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>News from $doc.getFieldValues('source').get(0)</b></a>
       #end 
     #end
   #else
-    <a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('raw_text')</b></a>
+    <a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>#field('raw_text')</b></a>
   #end
 #else
-  <a href="#lensNoQ&fq&q=Id:$docId&mlt=true")><b>Link</b></a>
+  <a href="#lensNoQ&q=Id:$docId&mlt=true")><b>Link</b></a>
 #end
 </div>
 #set($tett = "#lensNoQ()")

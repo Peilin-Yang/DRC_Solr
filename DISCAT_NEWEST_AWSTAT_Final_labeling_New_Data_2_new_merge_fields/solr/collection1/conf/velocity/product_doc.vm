@@ -6,9 +6,9 @@
 ##changed here
 <div class="result-title"><b></b><span class="mlt">  #if($params.getBool('mlt', false) == false)
 #if($request.params.get('q'))
-<a href="#lensNoQ&fq&q=Id:$docId+$request.params.get('q')&mlt=true")><b>Link</b></a>
+<a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>Link</b></a>
 #else
-<a href="#lensNoQ&fq&q=Id:$docId&mlt=true")><b>Link</b></a>
+<a href="#lensNoQ&q=Id:$docId&mlt=true")><b>Link</b></a>
 #end
 
 #set($tett = "#lensNoQ()")

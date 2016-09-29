@@ -24,13 +24,14 @@ def main():
         
     data_dir = [
         "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/solr/collection1/data",
-        "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/solr/news/data"
+        "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/solr/news/data",
+        "DISCAT_NEWEST_AWSTAT_Final_labeling_New_Data_2_new_merge_fields/logs"
     ]
     
     for name in data_dir:
         source_dir = os.path.join(REMOTE_ROOT,name)
         dest_dir = os.path.join(root_dir,name)
-        cmd = "scp -r infolab:%s %s"\
+        cmd = "rsync -azv infolab:%s %s"\
                 %(source_dir,dest_dir)
 
         os.system(cmd)
