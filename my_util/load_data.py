@@ -31,7 +31,7 @@ def main():
     for name in data_dir:
         source_dir = os.path.join(REMOTE_ROOT,name)
         dest_dir = os.path.join(root_dir,name)
-        cmd = "rsync -azv infolab:%s %s"\
+        cmd = "rsync -azv infolab:%s/ %s"\
                 %(source_dir,dest_dir)
 
         os.system(cmd)

@@ -11,11 +11,11 @@
   ## Hide facets without value
   #if($field.value.counts.size() > 0)
 	#if($field.key == "dt")
-        #set($name = 'Time Range')
+        #set($display = 'Time Range')
     #else
-        #set($name = $field.key)
+        #set($display = $field.key)
     #end
-	#set($display = $name)
+    #set($name = $field.key)
 	#set($f = $field.value.counts)
 	#set($start = $field.value.start)
 	#set($end = $field.value.end)
