@@ -6,7 +6,10 @@
 ##changed here
 <div class="result-title"><b></b><span class="mlt">  #if($params.getBool('mlt', false) == false)
 #if($request.params.get('q'))
-<a href="#lensNoQ&q=Id:$docId+$request.params.get('q')&mlt=true")><b>Link</b></a>
+#set($myUrl=$request.params.get('q'))
+#set($myUrl=$esc.url($myUrl))
+<a href="#lensNoQ&q=Id:$docId+$myUrl&mlt=true")><b>Link</b></a>
+##<a href="#lensNoQ&q=Id:$docId+$params.get('q')&mlt=true")><b>Link</b></a>
 #else
 <a href="#lensNoQ&q=Id:$docId&mlt=true")><b>Link</b></a>
 #end
@@ -36,6 +39,7 @@
 #set($element_2 = $element_1.replace("Id:", ""))
 #if($docId == $element_2)
 #set($query = $request.params.get('q').replace($Id_docId,""))
+#set($query=$esc.url($query))
 <div class="Relevant" style="color: #ffffff; background-color: #ff0000">Relevant ? <a href="#lensNoQ&q=$query&relevent=true&Id:$docId"><b>Yes</b></a> <a href="#lensNoQ&q=$query&relevent=false&Id:$docId"><b>No</b></a> </div>
 #end
 #end
